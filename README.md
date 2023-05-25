@@ -11,7 +11,7 @@ The code is public because we had to make it public for our actual test, the cod
 ## How to use the app at your home
 
 1. Download or clone this repository
-2. Follow the installation step to install flutter from this link: [https://docs.flutter.dev/get-started/install]
+2. Follow the installation step to install flutter from this link: https://docs.flutter.dev/get-started/install
 3. Go in the directory
 4. Run `flutter pub get`
 5. Run `flutter pub run`
