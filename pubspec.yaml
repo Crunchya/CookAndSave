@@ -1,0 +1,60 @@
+name: cooksave
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  easy_splash_screen:
+  dio: ^4.0.6
+  flutter_dotenv: ^5.0.2
+  flutter_card_swiper: 
+    git: https://github.com/LemonsSquirrel/flutter_card_swiper.git
+
+  animated_check: ^1.0.5
+  cached_network_image: ^3.2.3
+  camera:
+  path_provider:
+  path:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_native_splash: ^1.2.0
+  flutter_svg_provider: ^1.0.3
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/assets/icons/logo.svg"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#023E3A"
+  adaptive_icon_foreground: "lib/assets/icons/logo.svg"
+
+flutter_native_splash: 
+  color: "#023E3A"
+  android: true
+  ios: true
+  image: "lib/assets/images/splash.png"
+
+
+flutter:
+  fonts:
+    - family: GlacialIndifference
+      fonts:
+        - asset: lib/assets/fonts/GlacialIndifference/GlacialIndifference-Regular.otf
+          weight: 400
+        - asset: lib/assets/fonts/GlacialIndifference/GlacialIndifference-Bold.otf
+          weight: 700
+    - family: CustomIcons
+      fonts:
+        - asset: lib/assets/fonts/CustomIcons/CustomIcons.ttf
+  assets:
+    - .env
+    - lib/assets/images/
+    - lib/assets/icons/
+  uses-material-design: true
