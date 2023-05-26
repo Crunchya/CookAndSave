@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cooksave/ui/typography.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +43,7 @@ class IngredientCard extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               image: DecorationImage(
-                  image: NetworkImage(Uri.encodeFull(
+                  image: CachedNetworkImageProvider(Uri.encodeFull(
                       jsonDecode(data["image_url"])[0].toString())),
                   fit: BoxFit.fitHeight),
               boxShadow: [
